@@ -4,6 +4,6 @@
 
 ## 🛠 Mudanças necessárias para a execução do projeto em desenvolvimento local:
 
-    Porta do Servidor em 3037 com local host padrão em 8080
+    Porta do Servidor em 3037
 
 # Enjoy with me and lets code
