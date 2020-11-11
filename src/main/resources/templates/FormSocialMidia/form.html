@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="~{base :: head}"></head>
+<body>
+
+
+
+
+	<div class="card mt-1">
+		<form th:action="@{/pedido/novo}" th:object="${requisicaoNovoPedido}"
+			class="card-body" method="POST">
+
+
+			<div class="form-group">
+				<label for="nomeProduto">Produto</label> <input
+					th:field="*{nomeProduto}" th:errorClass="is-invalid"
+					class="form-control" placeholder="nome do produto" /> <small>Informa
+					qual o nome do produto.</small>
+				<div class="invalid-feedback" th:errors="*{nomeProduto}">Erros
+					do nome do produto</div>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
